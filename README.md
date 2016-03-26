@@ -1,26 +1,39 @@
+[Vic3 Open Project](http://pedrolvicente.wordpress.com)
+====================================
+
 # vic3
 
+Download the Source
+===================
+
+Please read the [AOSP building instructions](http://source.android.com/source/index.html) before proceeding.
+
 Initializing Repository
+-----------------------
 
-1. ) repo init -u http://github.com/vic3t3chn0/vic3.git -b mm
+Initiate core trees without any device/kernel/vendor:
 
-Sync the tree source code
+    $ repo init -u https://github.com/vic3t3chn0/vic3.git -b mm
 
-2. ) repo sync
+Sync the repository:
 
-BUILDING - Can be used for build the source code
+    $ repo sync
 
-After the sync is finished, please read the instructions from the Android site on how to build.
+***
 
-. build/envsetup.sh
-lunch
+Building
+--------
 
+After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
 
-You can also build for specific devices (eg. hammerhead) like this:
+    . build/envsetup.sh
+    lunch
 
-. build/envsetup.sh
-lunch aokp_togari-userdebug
-mka rainbowfarts
+You can also build for specific devices (eg. Sony Z Ultra) like this:
+
+    . build/envsetup.sh
+    lunch aokp_togari-userdebug
+    mka rainbowfarts
 
 
 Remember to make clobber && make clean every now and so on and on!
