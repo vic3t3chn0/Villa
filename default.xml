@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r22" />
-
-  <remote  name="github"
-           fetch=".." />
+  <<remote  name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
 
   <remote  name="aokp"
-           revision="refs/heads/lollipop"
-           fetch=".."
+           revision="lollipop"
+           fetch="https://github.com/"
            review="gerrit.aokp.co" />
 
   <remote  name="cm"
-           fetch=".."
-           review="review.cyanogenmod.org"
-           revision="refs/heads/cm-12.1" />
+           revision="cm-12.1"
+           fetch="https://github.com/"
+           review="review.cyanogenmod.org" />
 
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
+  <remote name="omni"
+           fetch="https://github.com/omnirom"
+           review="gerrit.omnirom.org" />
 
-  <default revision="refs/heads/lollipop"
-           remote="aokp"
-           sync-c="true"
+
+  <default revision="refs/tags/android-5.1.1_r22"
+           remote="aosp"
            sync-j="4" />
 
   <!-- AOKP -->
