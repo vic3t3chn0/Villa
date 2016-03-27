@@ -4,11 +4,11 @@
   <!-- HTC -->
   <!-- HTC One M8 -->
   <project name="AOKP/device_htc_m8" path="device/htc/m8" remote="aokp" revision="mm" />
-  <project name="Cyanogenmod/android_device_htc_m8-common" path="device/htc/m8-common" remote="cm" revision="cm-13.0" />
-  <project name="Cyanogenmod/android_device_htc_msm8974-common" path="device/htc/msm8974-common" remote="cm" revision="cm-13.0" />
+  <project name="Cyanogenmod/android_device_htc_m8-common" path="device/htc/m8-common" remote="cm" revision="cm-12.1" />
+  <project name="Cyanogenmod/android_device_htc_msm8974-common" path="device/htc/msm8974-common" remote="cm" revision="cm-12.1" />
   <project name="Cyanogenmod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-13.0" />
-  <project name="Cyanogenmod/android_kernel_htc_msm8974" path="kernel/htc/msm8974" remote="cm" revision="cm-13.0" />
-  <project name="TheMuppets/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-13.0" />
+  <project name="Cyanogenmod/android_kernel_htc_msm8974" path="kernel/htc/msm8974" remote="cm" revision="cm-12.1" />
+  <project name="TheMuppets/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-12.1" />
 
   <!-- Motorola -->
   <!-- Nexus 6 -->
@@ -58,7 +58,7 @@
   <!-- Sony Common Repos -->
   <project name="CyanogenMod/android_kernel_sony_msm" path="kernel/sony/msm" remote="cm" />
   <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/sony" remote="cm" revision="cm-13.0-sony" />
-  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/sony" remote="cm" revision="cm-13.0-sony" />
+  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/sony" remote="cm" revision="cm-12.1-sony" />
   <project name="CyanogenMod/android_device_sony_common" path="device/sony/common" remote="cm" />
   <project name="CyanogenMod/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="cm" />
   <project name="CyanogenMod/android_hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" remote="cm" />
@@ -85,7 +85,7 @@
   <project name="AOKP/device_google_sprout8" path="device/google/sprout8" remote="aokp" />
   <project name="AOKP/kernel_mediatek_sprout" path="kernel/mediatek/sprout" remote="aokp" />
   <project name="AOKP/device_google_sprout-common" path="device/google/sprout-common" remote="aokp" />
-  <project name="TheMuppets/proprietary_vendor_google" path="vendor/google" remote="github" revision="cm-13.0" />
+  <project name="TheMuppets/proprietary_vendor_google" path="vendor/google" remote="github" revision="cm-12.1" />
 
   <!-- YU -->
   <!-- YU Yuphoria -->
