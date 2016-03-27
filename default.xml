@@ -20,7 +20,7 @@
            review="gerrit.omnirom.org" />
 
 
-  <default revision="refs/tags/android-5.1.1_r34"
+  <default revision="refs/tags/lollipop"
            remote="aosp"
            sync-j="4" />
 
