@@ -20,12 +20,11 @@
            review="gerrit.omnirom.org" />
 
 
-  <default revision="refs/tags/android-5.1.1_r22"
+  <default revision="refs/tags/android-5.1.1_r1"
            remote="aosp"
            sync-j="4" />
 
   <!-- AOKP -->
-  <project path="platform_manifest" name="AOKP/platform_manifest" remote="aokp" />
   <project path="build" name="AOKP/build" groups="pdk" remote="aokp" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
