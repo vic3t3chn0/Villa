@@ -11,7 +11,7 @@
            review="gerrit.aokp.co" />
 
   <remote  name="cm"
-           revision="cm-12.1"
+           revision="cm-12.0"
            fetch="https://github.com/"
            review="review.cyanogenmod.org" />
 
@@ -20,7 +20,7 @@
            review="gerrit.omnirom.org" />
 
 
-  <default revision="refs/tags/lollipop"
+  <default revision="refs/tags/android-5.1.1_r2"
            remote="aosp"
            sync-j="4" />
 
