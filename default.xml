@@ -11,7 +11,7 @@
            review="gerrit.aokp.co" />
 
   <remote  name="cm"
-           revision="cm-12.0"
+           revision="cm-12.1"
            fetch="https://github.com/"
            review="review.cyanogenmod.org" />
 
@@ -20,7 +20,7 @@
            review="gerrit.omnirom.org" />
 
 
-  <default revision="refs/tags/android-5.0.0_r2"
+  <default revision="refs/tags/android-5.1.1_r36"
            remote="aosp"
            sync-j="4" />
 
@@ -29,9 +29,9 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-12.0" />
+  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="cm" revision="cm-12.0" />
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -70,8 +70,8 @@
   <project path="device/oppo/find7s" name="AOKP/device_oppo_find7s" remote="aokp" revision="lollipop" groups="notdefault,device,find7s" />
   <project path="device/oppo/find7-common" name="AOKP/device_oppo_find7-common" remote="aokp" revision="lollipop" groups="notdefault,device,find7,find7s" />
   <project path="device/oppo/msm8974-common" name="AOKP/device_oppo_msm8974-common" remote="aokp" revision="lollipop" groups="notdefault,device,find7,find7s" />
-  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" groups="qcom" remote="cm" revision="cm-12.0" />
-  <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" groups="qcom" remote="cm" revision="cm-12.0" />
+  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" groups="qcom" remote="cm" revision="cm-12.1" />
+  <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" groups="qcom" remote="cm" revision="cm-12.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/jf-common" name="AOKP/device_samsung_jf-common" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
   <project path="device/samsung/jfltevzw" name="AOKP/device_samsung_jfltevzw" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
@@ -94,7 +94,7 @@
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
-  <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" remote="cm" revision="cm-12.0" />
+  <project path="external/android-visualizer" name="CyanogenMod/android_external_android-visualizer" remote="cm" revision="cm-12.1" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
   <project path="external/ant-wireless/ant_native" name="CyanogenMod/android_external_ant-wireless_ant_native" remote="cm" revision="cm-12.0" />
   <project path="external/ant-wireless/ant_service" name="CyanogenMod/android_external_ant-wireless_ant_service" remote="cm" revision="cm-12.0" />
@@ -110,13 +110,13 @@
   <project path="external/bluetooth/bluedroid" name="CyanogenMod/android_external_bluetooth_bluedroid" groups="pdk" remote="cm" revision="cm-12.0" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="cm" revision="cm-12.0" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="cm" revision="cm-12.1" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="CyanogenMod/android_external_chromium_org" remote="cm" revision="cm-12.0" />
+  <project path="external/chromium_org" name="CyanogenMod/android_external_chromium_org" remote="cm" revision="cm-12.1" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -143,7 +143,7 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
-  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" remote="cm" revision="cm-12.0" />
+  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
@@ -151,7 +151,7 @@
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" />
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,tradefed" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs" />
-  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="cm" revision="cm-12.0" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" remote="cm" revision="cm-12.1" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs" />
   <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
@@ -532,12 +532,12 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
   <project path="system/core" name="AOKP/system_core" groups="pdk" remote="aokp" revision="lollipop" />
-  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="cm" revision="cm-12.0" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" remote="cm" revision="cm-12.0" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" remote="cm" revision="cm-12.1" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -555,17 +555,15 @@
   <project path="vendor/aokp" name="AOKP/vendor_aokp" remote="aokp" revision="lollipop" />
   <project path="vendor/aokp/bot" name="AOKP/pseudo_buildbot" remote="aokp" revision="lollipop" />
   <project path="vendor/aokp/resources" name="AOKP/vendor_aokp_resources" remote="aokp" revision="lollipop" />
-  <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="cm" revision="cm-12.0" groups="notdefault,vendor,asus,grouper" />
+  <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="cm" revision="cm-12.1" groups="notdefault,vendor,asus,grouper" />
   <project path="vendor/lge" name="AOKP/vendor_lge" groups="notdefault,vendor,lge" remote="aokp" revision="lollipop" />
-  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="cm" revision="cm-12.0" />
-  <project path="vendor/nvidia" name="TheMuppets/proprietary_vendor_nvidia" remote="cm" revision="cm-12.0" groups="notdefault,vendor,nvidia,grouper" />
+  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="cm" revision="cm-12.1" />
+  <project path="vendor/nvidia" name="TheMuppets/proprietary_vendor_nvidia" remote="cm" revision="cm-12.1" groups="notdefault,vendor,nvidia,grouper" />
   <project path="vendor/oppo" name="AOKP/vendor_oppo" remote="aokp" revision="lollipop" groups="notdefault,vendor,oppo,oneplus" />
-  <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="cm" revision="cm-12.0" groups="notdefault,vendor,samsung,jfltevzw" />
+  <project path="vendor/samsung" name="TheMuppets/proprietary_vendor_samsung" remote="cm" revision="cm-12.1" groups="notdefault,vendor,samsung,jfltevzw" />
   <project path="vendor/sony" name="AOKP/vendor_sony" remote="aokp" revision="lollipop" groups="notdefault,vendor,sony" />
-  <project path="vendor/widevine" name="TheMuppets/proprietary_vendor_widevine" remote="cm" revision="cm-12.0" groups="notdefault,vendor" />
+  <project path="vendor/widevine" name="TheMuppets/proprietary_vendor_widevine" remote="cm" revision="cm-12.1" groups="notdefault,vendor" />
 
   <project path="platform_manifest" name="AOKP/platform_manifest" remote="aokp" revision="lollipop" />
 
 </manifest>
-
-
