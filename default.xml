@@ -77,8 +77,8 @@
   <project path="device/samsung/jfltevzw" name="AOKP/device_samsung_jfltevzw" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
   <project path="device/samsung/qcom-common" name="AOKP/device_samsung_qcom-common" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="notdefault,device,manta" />
-  <project path="device/sony/common" name="AOKP/device_sony_common" remote="aokp" revision="lollipop" groups="notdefault,device,sony" />
-  <project path="device/sony/qcom-common" name="AOKP/device_sony_qcom-common" remote="aokp" revision="lollipop" groups="notdefault,device,sony" />
+  <project path="device/sony/common" name="CyanogenMod/device_sony_common" remote="cm" revision="cm-12.1" groups="notdefault,device,sony" />
+  <project path="device/sony/qcom-common" name="CyanogenMod/device_sony_qcom-common" remote="cm" revision="cm-12.1" groups="notdefault,device,sony" />
   <project path="device/sony/msm8960-common" name="AOKP/device_sony_msm8960-common" remote="aokp" revision="lollipop" groups="notdefault,device,yuga,odin,dogo,pollux,mint,tsubasa" />
   <project path="device/sony/fusion3-common" name="AOKP/device_sony_fusion3-common" remote="aokp" revision="lollipop" groups="notdefault,device,yuga,dogo,odin,pollux" />
   <project path="device/sony/dogo" name="AOKP/device_sony_dogo" remote="aokp" revision="lollipop" groups="notdefault,device,dogo" />
@@ -310,7 +310,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" remote="cm" revision="cm-12.1" />
-  <project path="frameworks/base" name="AOKP/frameworks_base" groups="pdk-cw-fs" remote="aokp" revision="lollipop" />
+  <project path="frameworks/base" name="AOKP/frameworks_base" groups="pdk-cw-fs" remote="cm" revision="cm-12.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -433,6 +433,7 @@
   <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="notdefault" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" remote="cm" revision="cm-12.1" />
+  <project path="packages/apps/Gello" name="CyanogenMod/android_packages_apps_Gello" remote="cm" revision="cm-12.1" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
