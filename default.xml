@@ -38,7 +38,6 @@
 <project path="device/sony/common-kernel" name="vendor-sony-kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="device/sony/eagle" name="device-sony-eagle" groups="device" remote="sony" revision="master" />
 <project path="device/sony/flamingo" name="device-sony-flamingo" groups="device" remote="sony" revision="master" />
-<project path="device/sony/honami" name="device-sony-honami" groups="device" remote="sony" revision="master" />
 <project path="device/sony/kanuti" name="device-sony-kanuti" groups="device" remote="sony" revision="master" />
 <project path="device/sony/ivy" name="device-sony-ivy" groups="device" remote="sony" revision="master" />
 <project path="device/sony/karin" name="device-sony-karin" groups="device" remote="sony" revision="master" />
