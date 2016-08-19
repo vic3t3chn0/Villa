@@ -22,6 +22,9 @@
 
   <remote name="sony" fetch="git://github.com/sonyxperiadev/" 
 	/>
+ 
+  <remote name="vendor_villa" fetch="git://github.com/vic3t3chn0/" 
+	/>
   
   <default revision="refs/tags/android-6.0.1_r9"
            remote="aosp"
@@ -30,7 +33,8 @@
   <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-6.0.1_r9" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="m-mr1" />
+<project path="vendor/villa/" name="vendor_villa" groups="vendor" remote="vic3t3chn0" revision="mm" />
+<project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="m-mr1" />
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor" name="device-sony-castor" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor_windy" name="device-sony-castor_windy" groups="device" remote="sony" revision="master" />
