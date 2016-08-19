@@ -27,10 +27,6 @@
   	fetch="git://github.com/vic3t3chn0/" 
 	/>
   
-  <default revision="refs/tags/android-6.0.1_r9"
-           remote="aosp"
-           sync-j="4" />
-
   <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-6.0.1_r9" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
