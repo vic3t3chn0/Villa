@@ -1,4 +1,4 @@
-[Vic3 Open Project](http://pedrolvicente.wordpress.com)
+[Villa OP Open Project](http://pedrolvicente.wordpress.com)
 ====================================
 
 # vic3
@@ -32,7 +32,7 @@ After the sync is finished, please read the [instructions from the Android site]
 You can also build for specific devices (eg. Sony Z Ultra) like this:
 
     . build/envsetup.sh
-    lunch aokp_togari-userdebug
+    lunch aosp_c6833-userdebug
     mka rainbowfarts
 
 
