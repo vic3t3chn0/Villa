@@ -27,7 +27,7 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-5.1.1_r1" >
+  <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-6.0.1_r1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="m-mr1" />
