@@ -1,8 +1,6 @@
 [Villa OP Open Project](http://pedrolvicente.wordpress.com)
 ====================================
 
-# vic3
-
 Download the Source
 ===================
 
