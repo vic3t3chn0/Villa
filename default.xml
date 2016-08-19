@@ -61,7 +61,7 @@
 <project path="device/sony/tulip" name="device-sony-tulip" groups="device" remote="sony" revision="master" />
 <project path="device/sony/yukon" name="device-sony-yukon" groups="device" remote="sony" revision="master" />
 <project path="hardware/qcom/camera" name="camera" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
-<project path="kernel/sony/msm" name="kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
+<project path="kernel/sony/togari" name="kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="vendor/qcom/opensource/dataservices" name="vendor-qcom-opensource-dataservices" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony-oss/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony-oss/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
@@ -69,7 +69,7 @@
 <project path="vendor/sony-oss/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
 <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-13.0" />
+  <project path="bionic" name="AOSP/android_bionic" groups="pdk" remote="aosp" revision="master" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="cm" revision="cm-13.0" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -123,14 +123,11 @@
   <project path="device/sony/fusion3-common" name="AOKP/device_sony_fusion3-common" remote="aokp" revision="lollipop" groups="notdefault,device,yuga,dogo,odin,pollux" />
   <project path="device/sony/dogo" name="AOKP/device_sony_dogo" remote="aokp" revision="lollipop" groups="notdefault,device,dogo" />
   <project path="device/sony/odin" name="AOKP/device_sony_odin" remote="aokp" revision="lollipop" groups="notdefault,device,odin" />
-  <project path="device/sony/yuga" name="AOKP/device_sony_yuga" remote="aokp" revision="lollipop" groups="notdefault,device,yuga" />
   <project path="device/sony/msm8974-common" name="AOKP/device_sony_msm8974-common" remote="aokp" revision="lollipop" groups="notdefault,device,sirius,honami,togari,amami" />
   <project path="device/sony/rhine-common" name="AOKP/device_sony_rhine-common" remote="aokp" revision="lollipop" groups="notdefault,device,honami,amami,togari" />
   <project path="device/sony/amami" name="AOKP/device_sony_amami" remote="aokp" revision="lollipop" groups="notdefault,device,amami" />
   <project path="device/sony/honami" name="AOKP/device_sony_honami" remote="aokp" revision="lollipop" groups="notdefault,device,honami" />
-  <project path="device/sony/togari" name="AOKP/device_sony_togari" remote="aokp" revision="lollipop" groups="notdefault,device,togari" />
   <project path="device/sony/shinano-common" name="AOKP/device_sony_shinano-common" remote="aokp" revision="lollipop" groups="notdefault,device,sirius,castor" />
-  <project path="device/sony/sirius" name="AOKP/device_sony_sirius" remote="aokp" revision="lollipop" groups="notdefault,device,sirius" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
