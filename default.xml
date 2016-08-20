@@ -31,7 +31,6 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="m-mr1" />
-<project path="device/sony/amami" name="device-sony-amami" groups="device" remote="sony" revision="master" />
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor" name="device-sony-castor" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor_windy" name="device-sony-castor_windy" groups="device" remote="sony" revision="master" />
