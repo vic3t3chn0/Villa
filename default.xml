@@ -35,28 +35,28 @@
 <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-13.0" />
 <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
 <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="cm" revision="cm-13.0" />
-  <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
-  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
-  <project path="developers/build" name="platform/developers/build" />
-  <project path="developers/demos" name="platform/developers/demos" />
-  <project path="developers/docs" name="platform/developers/docs" />
-  <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="platform/development" groups="pdk-cw-fs" />
-  <project path="device/asus/deb" name="device/asus/deb" groups="notdefault,device,flo" />
-  <project path="device/asus/flo" name="device/asus/flo" groups="notdefault,device,flo" />
-  <project path="device/asus/fugu" name="device/asus/fugu" groups="notdefault,device,fugu" />
-  <project path="device/asus/grouper" name="CyanogenMod/device_asus_grouper" remote="cm" groups="notdefault,device,grouper" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="notdefault,device,grouper" />
-  <project path="device/common" name="device/common" groups="pdk-cw-fs" />
-  <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
-  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
-  <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
-  <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk,notdefault" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk,notdefault" />
+<project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
+<project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
+<project path="developers/build" name="platform/developers/build" />
+<project path="developers/demos" name="platform/developers/demos" />
+<project path="developers/docs" name="platform/developers/docs" />
+<project path="developers/samples/android" name="platform/developers/samples/android" />
+<project path="development" name="platform/development" groups="pdk-cw-fs" />
+<project path="device/asus/deb" name="device/asus/deb" groups="notdefault,device,flo" />
+<project path="device/asus/flo" name="device/asus/flo" groups="notdefault,device,flo" />
+<project path="device/asus/fugu" name="device/asus/fugu" groups="notdefault,device,fugu" />
+<project path="device/asus/grouper" name="CyanogenMod/device_asus_grouper" remote="cm" groups="notdefault,device,grouper" />
+<project path="device/asus/tilapia" name="device/asus/tilapia" groups="notdefault,device,grouper" />
+<project path="device/common" name="device/common" groups="pdk-cw-fs" />
+<project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
+<project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+<project path="device/generic/common" name="device/generic/common" groups="pdk" />
+<project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+<project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
+<project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
+<project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
+<project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk,notdefault" />
+<project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk,notdefault" />
   <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk,notdefault" />
   <project path="device/generic/qemu" name="device/generic/qemu" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
