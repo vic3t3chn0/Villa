@@ -20,30 +20,27 @@
            review="gerrit.omnirom.org" />
 
 
-  <remote name="sony" fetch="git://github.com/sonyxperiadev/" 
+  <remote name="sony" fetch="git://github.com/sonyxperiadev/"
 	/>
- 
-  <remote name="vic3t3chn0" revision="vendor_villa"
-  	fetch="git://github.com/vic3t3chn0/" 
-	/>
-	
-<default revision="refs/tags/android-5.1.1_r1"
+
+  <default revision="refs/tags/android-6.0.1_r1"
            remote="aosp"
            sync-j="4" />
 
-  
-  <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-6.0.1_r9" >
+  <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-6.0.1_r1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-<project path="vendor/villa/" name="vendor_villa" groups="vendor" remote="vic3t3chn0" revision="mm" />
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="sony" revision="m-mr1" />
+<project path="device/sony/amami" name="device-sony-amami" groups="device" remote="sony" revision="master" />
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor" name="device-sony-castor" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor_windy" name="device-sony-castor_windy" groups="device" remote="sony" revision="master" />
+<project path="device/sony/common" name="device-sony-common" groups="device" remote="sony" revision="m-mr1" />
 <project path="device/sony/common-headers" name="device-sony-common-headers" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="device/sony/common-kernel" name="vendor-sony-kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="device/sony/eagle" name="device-sony-eagle" groups="device" remote="sony" revision="master" />
 <project path="device/sony/flamingo" name="device-sony-flamingo" groups="device" remote="sony" revision="master" />
+<project path="device/sony/honami" name="device-sony-honami" groups="device" remote="sony" revision="master" />
 <project path="device/sony/kanuti" name="device-sony-kanuti" groups="device" remote="sony" revision="master" />
 <project path="device/sony/ivy" name="device-sony-ivy" groups="device" remote="sony" revision="master" />
 <project path="device/sony/karin" name="device-sony-karin" groups="device" remote="sony" revision="master" />
@@ -64,17 +61,17 @@
 <project path="device/sony/tulip" name="device-sony-tulip" groups="device" remote="sony" revision="master" />
 <project path="device/sony/yukon" name="device-sony-yukon" groups="device" remote="sony" revision="master" />
 <project path="hardware/qcom/camera" name="camera" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
-<project path="kernel/sony/togari" name="kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
+<project path="kernel/sony/msm" name="kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="vendor/qcom/opensource/dataservices" name="vendor-qcom-opensource-dataservices" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony-oss/thermanager" name="thermanager" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony-oss/mkqcdtbootimg" name="mkqcdtbootimg" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony-oss/macaddrsetup" name="macaddrsetup" groups="device" remote="sony" revision="master" />
 <project path="vendor/sony-oss/timekeep" name="timekeep" groups="device" remote="sony" revision="master" />
 <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-13.0" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="cm" revision="cm-13.0" />
+<project path="art" name="platform/art" groups="pdk" />
+<project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-13.0" />
+<project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
+<project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" remote="cm" revision="cm-13.0" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -85,7 +82,7 @@
   <project path="device/asus/deb" name="device/asus/deb" groups="notdefault,device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="notdefault,device,flo" />
   <project path="device/asus/fugu" name="device/asus/fugu" groups="notdefault,device,fugu" />
-  <project path="device/asus/grouper" name="AOKP/device_asus_grouper" remote="aokp" groups="notdefault,device,grouper" />
+  <project path="device/asus/grouper" name="CyanogenMod/device_asus_grouper" remote="cm" groups="notdefault,device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="notdefault,device,grouper" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
@@ -105,32 +102,35 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="notdefault,device,fugu" />
   <project path="device/htc/flounder" name="device/htc/flounder" groups="notdefault,device,flounder" />
-  <project path="device/lge/hammerhead" name="AOKP/device_lge_hammerhead" remote="aokp" groups="notdefault,device,hammerhead" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="notdefault,device,mako" />
-  <project path="device/moto/shamu" name="AOKP/device_moto_shamu" remote="aokp" revision="lollipop" groups="notdefault,device,shamu" />
-  <project path="device/oppo/common" name="AOKP/device_oppo_common" remote="aokp" revision="lollipop" groups="notdefault,device,find7,find7s" />
-  <project path="device/oppo/find7" name="AOKP/device_oppo_find7" remote="aokp" revision="lollipop" groups="notdefault,device,find7" />
-  <project path="device/oppo/find7s" name="AOKP/device_oppo_find7s" remote="aokp" revision="lollipop" groups="notdefault,device,find7s" />
-  <project path="device/oppo/find7-common" name="AOKP/device_oppo_find7-common" remote="aokp" revision="lollipop" groups="notdefault,device,find7,find7s" />
-  <project path="device/oppo/msm8974-common" name="AOKP/device_oppo_msm8974-common" remote="aokp" revision="lollipop" groups="notdefault,device,find7,find7s" />
+  <project path="device/lge/hammerhead" name="CyanogenMod/device_lge_hammerhead" remote="cm" groups="notdefault,device,hammerhead" />
+  <project path="device/lge/mako" name="CyanogenMod/device_lge_mako" remote="cm" groups="notdefault,device,mako" />
+  <project path="device/moto/shamu" name="AOKP/device_moto_shamu" remote="aokp" revision="mm" groups="notdefault,device,shamu" />
+  <project path="device/oppo/common" name="AOKP/device_oppo_common" remote="aokp" revision="mm" groups="notdefault,device,find7,find7s" />
+  <project path="device/oppo/find7" name="AOKP/device_oppo_find7" remote="aokp" revision="mm" groups="notdefault,device,find7" />
+  <project path="device/oppo/find7s" name="AOKP/device_oppo_find7s" remote="aokp" revision="mm" groups="notdefault,device,find7s" />
+  <project path="device/oppo/find7-common" name="AOKP/device_oppo_find7-common" remote="aokp" revision="mm" groups="notdefault,device,find7,find7s" />
+  <project path="device/oppo/msm8974-common" name="AOKP/device_oppo_msm8974-common" remote="aokp" revision="mm" groups="notdefault,device,find7,find7s" />
   <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" groups="qcom" remote="cm" revision="cm-13.0" />
   <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" groups="qcom" remote="cm" revision="cm-13.0" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/jf-common" name="AOKP/device_samsung_jf-common" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
-  <project path="device/samsung/jfltevzw" name="AOKP/device_samsung_jfltevzw" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
-  <project path="device/samsung/qcom-common" name="AOKP/device_samsung_qcom-common" remote="aokp" revision="lollipop" groups="notdefault,device,jfltevzw" />
+  <project path="device/samsung/jf-common" name="AOKP/device_samsung_jf-common" remote="aokp" revision="mm" groups="notdefault,device,jfltevzw" />
+  <project path="device/samsung/jfltevzw" name="AOKP/device_samsung_jfltevzw" remote="aokp" revision="mm" groups="notdefault,device,jfltevzw" />
+  <project path="device/samsung/qcom-common" name="AOKP/device_samsung_qcom-common" remote="aokp" revision="mm" groups="notdefault,device,jfltevzw" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="notdefault,device,manta" />
   <project path="device/sony/common" name="CyanogenMod/device_sony_common" remote="cm" revision="cm-13.0" groups="notdefault,device,sony" />
   <project path="device/sony/qcom-common" name="CyanogenMod/device_sony_qcom-common" remote="cm" revision="cm-13.0" groups="notdefault,device,sony" />
-  <project path="device/sony/msm8960-common" name="AOKP/device_sony_msm8960-common" remote="aokp" revision="lollipop" groups="notdefault,device,yuga,odin,dogo,pollux,mint,tsubasa" />
-  <project path="device/sony/fusion3-common" name="AOKP/device_sony_fusion3-common" remote="aokp" revision="lollipop" groups="notdefault,device,yuga,dogo,odin,pollux" />
-  <project path="device/sony/dogo" name="AOKP/device_sony_dogo" remote="aokp" revision="lollipop" groups="notdefault,device,dogo" />
-  <project path="device/sony/odin" name="AOKP/device_sony_odin" remote="aokp" revision="lollipop" groups="notdefault,device,odin" />
-  <project path="device/sony/msm8974-common" name="AOKP/device_sony_msm8974-common" remote="aokp" revision="lollipop" groups="notdefault,device,sirius,honami,togari,amami" />
-  <project path="device/sony/rhine-common" name="AOKP/device_sony_rhine-common" remote="aokp" revision="lollipop" groups="notdefault,device,honami,amami,togari" />
-  <project path="device/sony/amami" name="AOKP/device_sony_amami" remote="aokp" revision="lollipop" groups="notdefault,device,amami" />
-  <project path="device/sony/honami" name="AOKP/device_sony_honami" remote="aokp" revision="lollipop" groups="notdefault,device,honami" />
-  <project path="device/sony/shinano-common" name="AOKP/device_sony_shinano-common" remote="aokp" revision="lollipop" groups="notdefault,device,sirius,castor" />
+  <project path="device/sony/msm8960-common" name="AOKP/device_sony_msm8960-common" remote="aokp" revision="mm" groups="notdefault,device,yuga,odin,dogo,pollux,mint,tsubasa" />
+  <project path="device/sony/fusion3-common" name="AOKP/device_sony_fusion3-common" remote="aokp" revision="mm" groups="notdefault,device,yuga,dogo,odin,pollux" />
+  <project path="device/sony/dogo" name="CyanogenMod/device_sony_dogo" remote="cm" revision="cm-13.0" groups="notdefault,device,dogo" />
+  <project path="device/sony/odin" name="CyanogenMod/device_sony_odin" remote="cm" revision="cm-13.0" groups="notdefault,device,odin" />
+  <project path="device/sony/yuga" name="CyanogenMod/device_sony_yuga" remote="cm" revision="cm-13.0" groups="notdefault,device,yuga" />
+  <project path="device/sony/msm8974-common" name="AOKP/device_sony_msm8974-common" remote="aokp" revision="mm" groups="notdefault,device,sirius,honami,togari,amami" />
+  <project path="device/sony/rhine-common" name="AOKP/device_sony_rhine-common" remote="aokp" revision="mm" groups="notdefault,device,honami,amami,togari" />
+  <project path="device/sony/amami" name="AOKP/device_sony_amami" remote="aokp" revision="mm" groups="notdefault,device,amami" />
+  <project path="device/sony/honami" name="AOKP/device_sony_honami" remote="aokp" revision="mm" groups="notdefault,device,honami" />
+  <project path="device/sony/togari" name="AOKP/device_sony_togari" remote="aokp" revision="mm" groups="notdefault,device,togari" />
+  <project path="device/sony/shinano-common" name="AOKP/device_sony_shinano-common" remote="aokp" revision="mm" groups="notdefault,device,sirius,castor" />
+  <project path="device/sony/sirius" name="AOKP/device_sony_sirius" remote="aokp" revision="mm" groups="notdefault,device,sirius" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -393,6 +393,9 @@
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" remote="cm" revision="cm-13.0" groups="invensense" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="cm" revision="cm-13.0" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="cm" revision="cm-13.0" groups="pdk" />
+  <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
+  <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
+
   <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-13.0" />
   <project path="hardware/qcom/audio-caf/apq8084" name="CyanogenMod/android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.0-caf-8084" />
   <project path="hardware/qcom/audio-caf/msm8226" name="CyanogenMod/android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.0-caf-8226" />
@@ -402,40 +405,41 @@
   <project path="hardware/qcom/audio-caf/msm8974" name="CyanogenMod/android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.0-caf-8974" />
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" remote="cm" revision="cm-13.0" groups="qcom" />
   <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="cm" revision="cm-13.0" groups="qcom,qcom_display" />
-  <project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-13.0-caf-8084" />
-  <project path="hardware/qcom/display-caf/msm8226" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-13.0-caf-8226" />
-  <project path="hardware/qcom/display-caf/msm8610" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-13.0-caf-8610" />
-  <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-13.0-caf-8916" />
-  <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-13.0-caf-8960" />
-  <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-13.0-caf-8974" />
+  <project path="hardware/qcom/display-caf/apq8084" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.0-caf-8084" />
+  <project path="hardware/qcom/display-caf/msm8226" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.0-caf-8226" />
+  <project path="hardware/qcom/display-caf/msm8610" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.0-caf-8610" />
+  <project path="hardware/qcom/display-caf/msm8916" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.0-caf-8916" />
+  <project path="hardware/qcom/display-caf/msm8960" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.0-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8974" name="CyanogenMod/android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.0-caf-8974" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="cm" groups="qcom" revision="cm-13.0" />
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" remote="cm" groups="qcom" revision="cm-13.0" />
   <project path="hardware/qcom/media/default" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0" />
-  <project path="hardware/qcom/media-caf/apq8084" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0-caf-8084" />
-  <project path="hardware/qcom/media-caf/msm8226" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0-caf-8226" />
-  <project path="hardware/qcom/media-caf/msm8610" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0-caf-8610" />
-  <project path="hardware/qcom/media-caf/msm8916" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0-caf-8916" />
-  <project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0-caf-8960" />
-  <project path="hardware/qcom/media-caf/msm8974" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-13.0-caf-8974" />
-  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" remote="aosp" revision="refs/tags/android-5.0.0_r6" />
-  <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" remote="aosp" revision="refs/tags/android-5.0.0_r6" />
-  <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" remote="aosp" revision="refs/tags/android-5.0.0_r6" />
-  <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" remote="aosp" revision="refs/tags/android-5.0.0_r6" />
-  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" revision="refs/tags/android-5.0.0_r6" />
+  <project path="hardware/qcom/media-caf/apq8084" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-12.0-caf-8084" />
+  <project path="hardware/qcom/media-caf/msm8226" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-12.0-caf-8226" />
+  <project path="hardware/qcom/media-caf/msm8610" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-12.0-caf-8610" />
+  <project path="hardware/qcom/media-caf/msm8916" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-12.0-caf-8916" />
+  <project path="hardware/qcom/media-caf/msm8960" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-12.0-caf-8960" />
+  <project path="hardware/qcom/media-caf/msm8974" name="CyanogenMod/android_hardware_qcom_media" remote="cm" groups="qcom" revision="cm-12.0-caf-8974" />
+  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" remote="aosp" revision="refs/tags/android-6.0.1_r1" />
+  <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" remote="aosp" revision="refs/tags/android-6.0.1_r1" />
+  <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" remote="aosp" revision="refs/tags/android-6.0.1_r1" />
+  <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" remote="aosp" revision="refs/tags/android-6.0.1_r1" />
+  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" revision="refs/tags/android-6.0.1_r1" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" remote="cm" groups="qcom_wlan" revision="cm-13.0" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="cm" groups="pdk" revision="cm-13.0" />
   <project path="hardware/ril-caf" name="CyanogenMod/android_hardware_ril" remote="cm" groups="pdk" revision="cm-12.0-caf" />
+  <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" remote="cm" groups="exynos5" revision="cm-13.0" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
   <project path="kernel/asus/grouper" name="CyanogenMod/android_kernel_asus_grouper" remote="cm" revision="cm-13.0" groups="notdefault,kernel,asus,grouper" />
-  <project path="kernel/lge/mako" name="AOKP/kernel_lge_mako" groups="notdefault,kernel,mako" remote="aokp" revision="lollipop" />
+  <project path="kernel/lge/mako" name="AOKP/kernel_lge_mako" groups="notdefault,kernel,mako" remote="aokp" revision="mm" />
   <project path="kernel/oneplus/msm8974" name="CyanogenMod/android_kernel_oneplus_msm8974" remote="cm" revision="cm-13.0" groups="notdefault,kernel,find7,find7s,bacon" />
   <project path="kernel/moto/shamu" name="CyanogenMod/android_kernel_moto_shamu" remote="cm" revision="cm-13.0" />
   <project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="cm" revision="cm-13.0" groups="notdefault,kernel,jfltevzw" />
   <project path="kernel/sony/apq8064" name="CyanogenMod/android_kernel_sony_apq8064" revision="cm-13.0" remote="cm" groups="notdefault,kernel,yuga,dogo,pollux,odin" />
   <project path="kernel/sony/msm8974" name="CyanogenMod/android_kernel_sony_msm8974" remote="cm" revision="cm-13.0" groups="kernel,sony,togari,honami,amami" />
-  <project path="kernel/sony/common" name="AOKP/kernel_sony_common" remote="aokp" revision="lollipop" groups="notdefault,sony" />
+  <project path="kernel/sony/common" name="AOKP/kernel_sony_common" remote="aokp" revision="mm" groups="notdefault,sony" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -477,8 +481,8 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/ROMControl" name="AOKP/packages_apps_ROMControl" remote="aokp" revision="lollipop" />
-  <project path="packages/apps/Settings" name="AOKP/packages_apps_Settings" remote="aokp" revision="lollipop" />
+  <project path="packages/apps/ROMControl" name="AOKP/packages_apps_ROMControl" remote="aokp" revision="mm" />
+  <project path="packages/apps/Settings" name="AOKP/packages_apps_Settings" remote="aokp" revision="mm" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -489,7 +493,7 @@
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
-  <project path="packages/inputmethods/LatinIME" name="AOKP/packages_input_LatinIME" remote="aokp" revision="lollipop" />
+  <project path="packages/inputmethods/LatinIME" name="AOKP/packages_input_LatinIME" remote="aokp" revision="mm" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
@@ -568,7 +572,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="AOKP/system_core" groups="pdk" remote="aokp" revision="lollipop" />
+  <project path="system/core" name="AOKP/system_core" groups="pdk" remote="aokp" revision="mm" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" remote="cm" revision="cm-13.0" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
@@ -593,7 +597,7 @@
   <project path="vendor/aokp/bot" name="AOKP/pseudo_buildbot" remote="aokp" revision="mm" />
   <project path="vendor/aokp/resources" name="AOKP/vendor_aokp_resources" remote="aokp" revision="mm" />
   <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="cm" revision="cm-13.0" groups="notdefault,vendor,asus,grouper" />
-  <project path="vendor/lge" name="AOKP/vendor_lge" groups="notdefault,vendor,lge" remote="aokp" revision="lollipop" />
+  <project path="vendor/lge" name="AOKP/vendor_lge" groups="notdefault,vendor,lge" remote="aokp" revision="mm" />
   <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="cm" revision="cm-13.0" />
   <project path="vendor/nvidia" name="TheMuppets/proprietary_vendor_nvidia" remote="cm" revision="cm-13.0" groups="notdefault,vendor,nvidia,grouper" />
   <project path="vendor/oppo" name="AOKP/vendor_oppo" remote="aokp" revision="mm" groups="notdefault,vendor,oppo,oneplus" />
