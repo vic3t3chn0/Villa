@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
+<remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
   <remote  name="aokp"
-           revision="mm"
+           revision="lollipop"
            fetch="https://github.com/"
            review="gerrit.aokp.co" />
 
@@ -23,13 +23,15 @@
   <remote name="sony" fetch="git://github.com/sonyxperiadev/"
 	/>
 
+  
   <default revision="refs/tags/android-6.0.1_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="AOSP/build" groups="pdk,tradefed" remote="aosp" revision="android-6.0.1_r1" >
+  <project path="build" name="AOKP/build" groups="pdk,tradefed" remote="aokp" revision="mm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  
 <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
 <project path="art" name="platform/art" groups="pdk" />
 <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" remote="cm" revision="cm-13.0" />
