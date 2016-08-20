@@ -6,7 +6,7 @@
            review="https://android-review.googlesource.com/" />
 
   <remote  name="aokp"
-           revision="lollipop"
+           revision="mm"
            fetch="https://github.com/"
            review="gerrit.aokp.co" />
 
@@ -24,7 +24,7 @@
 	/>
 
   
-  <default revision="refs/tags/android-6.0.1_r1"
+  <default revision="refs/tags/android-5.0.1_r1"
            remote="aosp"
            sync-j="4" />
 
