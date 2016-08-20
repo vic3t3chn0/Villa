@@ -35,7 +35,6 @@
 <project path="device/sony/aries" name="device-sony-aries" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor" name="device-sony-castor" groups="device" remote="sony" revision="master" />
 <project path="device/sony/castor_windy" name="device-sony-castor_windy" groups="device" remote="sony" revision="master" />
-<project path="device/sony/common" name="device-sony-common" groups="device" remote="sony" revision="m-mr1" />
 <project path="device/sony/common-headers" name="device-sony-common-headers" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="device/sony/common-kernel" name="vendor-sony-kernel" groups="device" remote="sony" revision="aosp/LA.BF64.1.2.2_rb4.7" />
 <project path="device/sony/eagle" name="device-sony-eagle" groups="device" remote="sony" revision="master" />
