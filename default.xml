@@ -50,7 +50,6 @@
 <project path="device/sony/scorpion_windy" name="device-sony-scorpion_windy" groups="device" remote="sony" revision="master" />
 <project path="device/sony/seagull" name="device-sony-seagull" groups="device" remote="sony" revision="master" />
 <project path="device/sony/shinano" name="device-sony-shinano" groups="device" remote="sony" revision="master" />
-<project path="device/sony/sirius" name="device-sony-sirius" groups="device" remote="sony" revision="master" />
 <project path="device/sony/sumire" name="device-sony-sumire" groups="device" remote="sony" revision="master" />
 <project path="device/sony/suzuran" name="device-sony-suzuran" groups="device" remote="sony" revision="master" />
 <project path="device/sony/tianchi" name="device-sony-tianchi" groups="device" remote="sony" revision="master" />
