@@ -13,7 +13,7 @@
 
   <remote name="cm"
 	fetch="http://github.com/CyanogenMod"
-	revision="cm-13.0"
+	revision="refs/tags/cm-13.0"
 	review="review.cyanogenmod.org"
 	 />
 
@@ -23,7 +23,7 @@
 
   <remote name="them"
 	fetch="http://github.com/TheMuppets"
-	revision="cm-13.0" />
+	revision="refs/tags/cm-13.0" />
 
   <default remote="phablet"
            sync-j="6" />
