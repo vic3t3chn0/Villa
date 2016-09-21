@@ -12,7 +12,7 @@
            revision="refs/tags/android-6.0.1_r67" />
 
   <remote name="cm"
-	fetch="http://github.com/"
+	fetch="http://github.com/CyanogenMod"
 	revision="cm-13.0"
 	review="review.cyanogenmod.org"
 	 />
