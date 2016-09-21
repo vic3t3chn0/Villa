@@ -11,7 +11,7 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-6.0.1_r66" />
 
- <remote  name="cm"
+ <remote  name="github"
            fetch=".."
            revision="refs/heads/cm-13.0"
            review="review.cyanogenmod.org" />
