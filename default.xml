@@ -13,7 +13,7 @@
 
   <remote name="cm"
 	fetch="http://github.com/CyanogenMod"
-	revision="refs/tags/cm-13.0"
+	revision="refs/tags/cm-12.1"
 	review="review.cyanogenmod.org"
 	 />
 
