@@ -4,7 +4,7 @@
   <remote name="phablet"
 	fetch="http://code-review.phablet.ubuntu.com"
 	review="http://code-review.phablet.ubuntu.com"
-	revision="refs/heads/android-6.0.0_r41" />
+	revision="refs/heads/android-5.1.1_r5" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
