@@ -4,7 +4,7 @@
   <remote name="phablet"
 	fetch="http://code-review.phablet.ubuntu.com"
 	review="http://code-review.phablet.ubuntu.com"
-	revision="refs/headss/android-6.0.0_r1" />
+	revision="refs/heads/android-6.0.0_r1" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -22,7 +22,7 @@
 
   <remote name="them"
 	fetch="http://github.com/TheMuppets"
-	revision="refs/tags/cm-13.0" />
+	revision="refs/heads/cm-13.0" />
 
   <default remote="phablet"
            sync-j="6" />
