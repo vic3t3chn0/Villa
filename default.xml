@@ -4,16 +4,16 @@
   <remote name="phablet"
 	fetch="http://code-review.phablet.ubuntu.com"
 	review="http://code-review.phablet.ubuntu.com"
-	revision="refs/tags/android-5.1.1_r5" />
+	revision="refs/headss/android-6.0.0_r1" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-6.0.1_r67" />
+           revision="refs/heads/android-6.0.1_r67" />
 
   <remote name="cm"
 	fetch="http://github.com/CyanogenMod"
-	revision="refs/tags/cm-12.1"
+	revision="refs/heads/cm-13.0"
 	 />
 
   <remote name="ubp"
