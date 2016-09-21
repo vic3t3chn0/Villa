@@ -12,8 +12,10 @@
            revision="refs/tags/android-6.0.1_r67" />
 
   <remote name="cm"
-	fetch="http://github.com/CyanogenMod"
-	revision="refs/heads/cm-13.0" />
+	fetch="http://github.com/"
+	revision="cm-13.0"
+	review="review.cyanogenmod.org"
+	 />
 
   <remote name="ubp"
 	fetch="http://github.com/ubports"
@@ -21,7 +23,7 @@
 
   <remote name="them"
 	fetch="http://github.com/TheMuppets"
-	revision="refs/heads/cm-13.0" />
+	revision="cm-13.0" />
 
   <default remote="phablet"
            sync-j="6" />
