@@ -9,7 +9,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-  />
+           revision="refs/tags/android-6.0.1_r67" />
 
   <remote name="cm"
 	fetch="http://github.com/CyanogenMod"
