@@ -9,12 +9,16 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/heads/android-6.0.0_r41" />
+           revision="refs/tags/android-6.0.1_r66" />
 
-  <remote name="cm"
-	fetch="http://github.com/CyanogenMod"
-	revision="refs/heads/cm-13.0"
-	 />
+ <remote  name="cm"
+           fetch=".."
+           revision="refs/heads/cm-13.0"
+           review="review.cyanogenmod.org" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
 
   <remote name="ubp"
 	fetch="http://github.com/ubports"
@@ -25,6 +29,7 @@
 	revision="refs/heads/cm-13.0" />
 
   <default remote="phablet"
+  	   sync-c="true"	
            sync-j="6" />
 
   <project path="build" name="android_build" groups="pdk,tradefed" remote="ubp" >
