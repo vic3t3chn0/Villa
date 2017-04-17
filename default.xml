@@ -8,11 +8,11 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-6.0.1_r67" />
+           revision="refs/tags/android-5.1.1_r32" />
 
   <remote name="cm"
 	fetch="http://github.com/CyanogenMod"
-	revision="refs/heads/cm-13.0" />
+	revision="refs/heads/cm-12.1" />
 
   <remote name="ubp"
 	fetch="http://github.com/ubports"
@@ -20,7 +20,7 @@
 
   <remote name="them"
 	fetch="http://github.com/TheMuppets"
-	revision="refs/heads/cm-13.0" />
+	revision="refs/heads/cm-12.1" />
 
   <default remote="phablet"
            sync-j="6" />
@@ -227,8 +227,8 @@
   <!-- Ubuntu specific repos -->
 
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" revision="refs/heads/personal/w-ondra/phablet-6.0.0_r1" />
-  <project path="external/pigz" name="CyanogenMod/android_external_pigz" revision="refs/heads/cm-13.0" />
-  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" revision="refs/heads/cm-13.0"/>
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz" revision="refs/heads/cm-12.1" />
+  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" revision="refs/heads/cm-12.1"/>
   <project path="external/gpg" name="aosp/platform/external/gpg" revision="refs/heads/master" />
   <project path="ubuntu/assets" name="ubuntu/assets" revision="refs/heads/master" />
   <project path="ubuntu/libhybris" name="ubuntu/libhybris" revision="refs/heads/personal/w-ondra/phablet-6.x" />
